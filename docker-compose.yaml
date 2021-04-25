@@ -19,7 +19,7 @@ services:
       - type: volume
         source: data
         target: /data
-      - ./mods.sh:/data/mods/mods.sh
+      - overworld:/opt/storage
     environment:
       WORLD_CONFIGURATION: |
         return {
@@ -490,6 +490,28 @@ services:
             },
             enabled=true 
           },
+          ["workshop-2449877271"]={
+            configuration_options={
+              [""]=0,
+              afraidnerf=2,
+              foodmult=2,
+              healrange=16,
+              healthval=200,
+              hungerval=175,
+              monsterstatus=2,
+              sanityval=150,
+              soul_stack=100,
+              soulblinkrange=2,
+              soulfoodhealing=25,
+              soulfoodhunger=25,
+              soulfoodsanity=25,
+              soulhealingcustom=50,
+              soulinpocket=1,
+              soulrange=16,
+              telepoofenabler=1 
+            },
+            enabled=true 
+          },
           ["workshop-362175979"]={ configuration_options={ ["Draw over FoW"]="disabled" }, enabled=true },
           ["workshop-375850593"]={ configuration_options={  }, enabled=true },
           ["workshop-378160973"]={
@@ -573,7 +595,7 @@ services:
       - type: volume
         source: data
         target: /data
-      - ./mods.sh:/data/mods/mods.sh
+      - underworld:/opt/storage
     environment:
       WORLD_CONFIGURATION: |
         return {
@@ -968,6 +990,28 @@ services:
             },
             enabled=true 
           },
+          ["workshop-2449877271"]={
+            configuration_options={
+              [""]=0,
+              afraidnerf=2,
+              foodmult=2,
+              healrange=16,
+              healthval=200,
+              hungerval=175,
+              monsterstatus=2,
+              sanityval=150,
+              soul_stack=100,
+              soulblinkrange=2,
+              soulfoodhealing=25,
+              soulfoodhunger=25,
+              soulfoodsanity=25,
+              soulhealingcustom=50,
+              soulinpocket=1,
+              soulrange=16,
+              telepoofenabler=1 
+            },
+            enabled=true 
+          },
           ["workshop-362175979"]={ configuration_options={ ["Draw over FoW"]="disabled" }, enabled=true },
           ["workshop-375850593"]={ configuration_options={  }, enabled=true },
           ["workshop-378160973"]={
@@ -1051,3 +1095,5 @@ services:
 
 volumes:
   data:
+  overworld:
+  underworld:
